@@ -17,39 +17,43 @@
 
   @keyframes rotate {
     from {
-        transform: translate(-50%, -50%) rotate(0deg);
+      transform: translate(-50%, -50%) rotate(0deg);
     }
     to {
-        transform: translate(-50%, -50%) rotate(360deg);
+      transform: translate(-50%, -50%) rotate(360deg);
     }
-}
+  }
+  
 
-@keyframes pulsate {
+  @keyframes pulsate {
     0%, 100% {
-        width: 200px;
-        height: 300px;
+      width: 200px;
+      height: 300px;
     }
     50% {
-        width: 350px;
-        height: 450px;
+      width: 250px;
+      height: 220px;
     }
-}
+  }
 
 .hero::before {
     content: "";
     position: absolute;
+    overflow: auto;
     width: 300px; /* adjust size as needed */
     height: 300px; /* adjust size as needed */
     background-color: #1d80d7; /* adjust color as needed */
     border-radius: 50%; /* makes the shape a circle */
-    filter: blur(140px); /* adjust blur as needed */
+    filter: blur(130px); /* adjust blur as needed */
     /* adjust position as needed */
-    top: 65%;
+    top: 60%;
     left: 36%;
     /* corrects position due to the blob's size */
     transform: translate(-50%, -50%);
-    z-index: -1; /* puts the blob behind other content */
+    z-index: -999; /* puts the blob behind other content */
+    transform-origin: center center; /* Set the rotation point to the center of the element */
     animation: rotate 50s infinite linear, pulsate 10s infinite ease-in-out;
+
 }
 
 @keyframes gradient {

@@ -38,20 +38,14 @@ import {
   const mockdata = [
     {
       title: 'Extreme performance',
-      description:
-        'Experience endless performance with our AI automated solutions, as our cutting-edge technology continually optimizes and evolves to meet your business demands.',
       icon: IconGauge,
     },
     {
       title: 'Enhanced customer experience',
-      description:
-        'Improve customer satisfaction and engagement with our AI-powered tools, delivering personalized interactions and support.',
       icon: IconUser,
     },
     {
       title: '24/7 availability',
-      description:
-        'Enjoy round-the-clock service availability, providing continuous support and accessibility to your customers.',
       icon: TimeIcon,
     },
   ];
@@ -126,7 +120,7 @@ import {
         Our AI automated platform offers effortless integration with businesses of all sizes, streamlining operations and fostering seamless collaboration. 
         </Text>
   
-        <SimpleGrid cols={3} spacing="xl" mt={50} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
+        <SimpleGrid className='mt-[100px]' cols={3} spacing="xl" mt={50} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
           {features}
         </SimpleGrid>
       </Container>
