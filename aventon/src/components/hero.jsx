@@ -10,12 +10,12 @@
     
     const aiRef = useRef(null) // <--- here's the change
     return (
-      <div className='w-full hero'>
+      <div className='w-full'>
       
           <div className='flex-col flex md:flex-row items-center justify-center'>
             
             <div className=' flex justify-center w-[50%] items-center'>
-                  <div>
+                  <div className='lg:p-10'>
                         <h2 className=' text-5xl md:text-7xl dark:text-white mb-6 font-black text-center md:text-left'>
                         Boost productivity, maximize <span className='gradient-text'>profits.</span>
                         </h2>

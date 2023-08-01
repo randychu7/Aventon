@@ -18,10 +18,17 @@
       min-height: 100vh;
       margin: 0;
     }
+
+    section {
+      height: 100vh;
+      padding: 0 clamp(4rem, 12vw, 20rem);
+      display:grid;
+      place-content: center;
+    }
   
   </style>
   <body class="dark:bg-[#030808] w-full bg-[#fbfefe]">
-    <div id="root"></div>
+    <div id="root" class=" hero"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
     <script>
