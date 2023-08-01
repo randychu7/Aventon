@@ -11,14 +11,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   </head>
   <style>
-
-      li:hover {
-          cursor: pointer !important;
-        }
+   body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
   
   </style>
-  <body class="dark:bg-[#030808] bg-[#fbfefe]">
+  <body class="dark:bg-[#030808] w-full bg-[#fbfefe]">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+    <script>
+      window.botpressWebChat.init({
+          "composerPlaceholder": "Chat with our AI bot",
+          "botConversationDescription": "Welcome to Aventon Automation",
+          "botId": "a0a126a8-bccd-4cdb-bc93-b116c1cb1f48",
+          "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
+          "messagingUrl": "https://messaging.botpress.cloud",
+          "clientId": "a0a126a8-bccd-4cdb-bc93-b116c1cb1f48",
+          "useSessionStorage": true
+      });
+    </script>
   </body>
 </html>

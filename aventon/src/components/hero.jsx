@@ -1,118 +1,46 @@
-import {
-    createStyles,
-    Image,
-    Container,
-    Title,
-    Button,
-    Group,
-    Text,
-    List,
-    ThemeIcon,
-    rem,
-  } from '@mantine/core';
-  import { IconCheck } from '@tabler/icons-react';
+
+    import Lottie from 'lottie-react'; // Make sure to import the correct LottieProps
+  import animationData from '../assets/ai_animation.json'
+  import {useRef} from 'react'
+  import "../App.css"
   
-  const useStyles = createStyles((theme) => ({
-    inner: {
-      display: 'flex',
-      justifyContent: 'space-between',
-      paddingTop: `calc(${theme.spacing.xl} * 4)`,
-      paddingBottom: `calc(${theme.spacing.xl} * 4)`,
-    },
+ 
   
-    content: {
-      maxWidth: rem(480),
-      marginRight: `calc(${theme.spacing.xl} * 3)`,
-  
-      [theme.fn.smallerThan('md')]: {
-        maxWidth: '100%',
-        marginRight: 0,
-      },
-    },
-  
-    title: {
-      color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-      fontFamily: `Greycliff CF, ${theme.fontFamily}`,
-      fontSize: rem(44),
-      lineHeight: 1.2,
-      fontWeight: 900,
-  
-      [theme.fn.smallerThan('xs')]: {
-        fontSize: rem(28),
-      },
-    },
-  
-    control: {
-      [theme.fn.smallerThan('xs')]: {
-        flex: 1,
-      },
-    },
-  
-    image: {
-      flex: 1,
-  
-      [theme.fn.smallerThan('md')]: {
-        display: 'none',
-      },
-    },
-  
-    highlight: {
-      position: 'relative',
-      backgroundColor: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).background,
-      borderRadius: theme.radius.sm,
-      padding: `${rem(4)} ${rem(12)}`,
-    },
-  }));
-  
-  export default function HeroBullets() {
-    const { classes } = useStyles();
+  export default function Hero() {
+    
+    const aiRef = useRef(null) // <--- here's the change
     return (
-      <div>
-        <Container>
-          <div className={classes.inner}>
-            <div className={classes.content}>
-              <Title className={classes.title}>
-                A <span className={classes.highlight}>modern</span> React <br /> components library
-              </Title>
-              <Text color="dimmed" mt="md">
-                Build fully functional accessible web applications faster than ever – Mantine includes
-                more than 120 customizable components and hooks to cover you in any situation
-              </Text>
-  
-              <List
-                mt={30}
-                spacing="sm"
-                size="sm"
-                icon={
-                  <ThemeIcon size={20} radius="xl">
-                    <IconCheck size={rem(12)} stroke={1.5} />
-                  </ThemeIcon>
-                }
-              >
-                <List.Item>
-                  <b>TypeScript based</b> – build type safe applications, all components and hooks
-                  export types
-                </List.Item>
-                <List.Item>
-                  <b>Free and open source</b> – all packages have MIT license, you can use Mantine in
-                  any project
-                </List.Item>
-                <List.Item>
-                  <b>No annoying focus ring</b> – focus ring will appear only when user navigates with
-                  keyboard
-                </List.Item>
-              </List>
-  
-              <Group mt={30}>
-                <Button radius="xl" size="md" className={classes.control}>
-                  Get started
-                </Button>
-              
-              </Group>
-            </div>
-            {/* <Image src={image.src} className={classes.image} /> */}
+      <div className='w-full hero'>
+      
+          <div className='flex-col flex md:flex-row items-center justify-center'>
+            
+            <div className=' flex justify-center w-[50%] items-center'>
+                  <div>
+                        <h2 className=' text-5xl md:text-7xl dark:text-white mb-6 font-black text-center md:text-left'>
+                        Boost productivity, maximize <span className='gradient-text'>profits.</span>
+                        </h2>
+                        <h3 className='text-1xl text-center dark:text-gray-200 md:text-left'>Embrace the power of automation, elevate your business, and watch your profits grow.</h3>
+                        <div className='w-full flex justify-center md:justify-start'>
+                                <button
+                                        className='h-[50px] w-[140px] mt-6 bg-[#0061b6] rounded-full 
+                                                    transition-all duration-200 floating-button shadow-below'
+                                    >
+                                        <h2 className='font-bold text-1xl text-white'>Get Started</h2>
+                                    </button>
+                        </div>
+                       
+                    </div>
+
+                </div>
+
+                <div>
+                <Lottie lottieRef={aiRef} className='h-[600px] -translate-y-12' animationData={animationData}/>
+
+                </div>
+
+           
           </div>
-        </Container>
+      
       </div>
     );
   }
