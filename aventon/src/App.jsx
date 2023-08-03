@@ -2,8 +2,8 @@ import Navbar from './components/navbar';
 import Hero from './components/hero';
 import Features from './components/features';
 import Sections  from './components/sections';
-import Carousel from './components/carousel';
-
+import Carousel from './components/products';
+import Accordion from './components/accordian';
 
 import './App.css';
 
@@ -32,8 +32,21 @@ function App() {
 
         <Sections/>
 
-        <section className='h-screen'>
+        <section className='h-screen flex items-center'>
+         
+         <div className=' p-5 w-full'>
 
+
+          <div className='w-full flex items-center dark:text-white justify-center text-5xl mb-[4em] mt-[4em] font-bold'><h2>Our <span className='gradient-text'>AI</span> Models</h2></div>
+          <div className='hidden md:flex'>
+          <Carousel/>
+          </div>
+          
+          <div className='h-[40em] p-5 block md:hidden'> 
+            <Accordion/>
+            </div>
+         
+          </div>
         </section>
 
        

@@ -6,7 +6,7 @@ import Hamburger from '../components/hamburger';
 
 export default function Nav() {
   return (
-    <nav className='absolute top-0 left-0 right-0 w-full bg-[#fbfefe] dark:bg-[#030808]' style={{ zIndex: 9 }}>
+    <nav className='fixed top-0 left-0 right-0 w-full bg-[#fbfefe] dark:bg-[#030808]' style={{ zIndex: 9 }}>
       <div className='h-full p-5 w-full flex items-center justify-between'>
         {/* ... rest of the code */}
         <div className='w-full h-full flex items-center justify-between'>

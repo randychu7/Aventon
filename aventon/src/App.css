@@ -1,9 +1,9 @@
 .floating-button:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     /* You can adjust the translateY value to change the floating distance */
     
     /* Expanding shadow effect */
-    box-shadow: 0px 18px 50px rgba(0, 97, 182, 1);
+    box-shadow: 0px 18px 40px rgba(0, 97, 182, 1);
     /* Increase the blur radius and/or spread radius to make the shadow expand */
     /* You can also adjust other properties like the color to your preference */
     transition: box-shadow 0.3s ease-in-out;
@@ -11,7 +11,7 @@
   }
 
   .shadow-below {
-    box-shadow: 0px 4px 10px rgba(0, 97, 182, 0.5);
+    box-shadow: 0px 4px 40px rgba(0, 97, 182, 0.5);
     /* Adjust the blur radius to make the shadow bigger (e.g., 12px) */
   }
 
