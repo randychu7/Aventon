@@ -56,6 +56,26 @@
 
 }
 
+.hero2::before {
+  content: "";
+  position: absolute;
+  overflow: hidden;
+  width: 200px; /* adjust size as needed */
+  height: 200px; /* adjust size as needed */
+  background-color: #1d80d7; /* adjust color as needed */
+  border-radius: 50%; /* makes the shape a circle */
+  filter: blur(130px); /* adjust blur as needed */
+  /* adjust position as needed */
+  top: 30%;
+  left: 50%;
+  /* corrects position due to the blob's size */
+  transform: translate(-50%, -50%);
+  z-index: -999; /* puts the blob behind other content */
+  transform-origin: center center; /* Set the rotation point to the center of the element */
+  animation: rotate 50s infinite linear, pulsate 10s infinite ease-in-out;
+
+}
+
 @keyframes gradient {
     0% {
       background-position: 0% 50%;
