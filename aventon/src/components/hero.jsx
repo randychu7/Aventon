@@ -10,7 +10,7 @@
     
     const aiRef = useRef(null) // <--- here's the change
     return (
-      <div className='w-full'>
+      <div className='w-full xl:mt-[40em]'>
       
           <div className='flex-col flex md:flex-row items-center justify-center'>
             
