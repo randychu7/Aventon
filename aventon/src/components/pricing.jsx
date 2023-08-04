@@ -3,17 +3,18 @@ import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 
 export default function pricing() {
     return (<div className='mt-[35em] md:mt-0'>
-        
-        <div className='w-full flex flex-col justify-center p-4 items-center'>  
-        <h3 className='font-bold text-6xl '><span className='gradient-text'>Subscriptions </span></h3>
-        <p className='text-gray-400 mb-10 mt-4 text-center md:text-left'> We currently have two tiers for subscriptions, choose the best plan for your business.</p>
+       
+        <div className='flex flex-col items-center'>
+        <h3 className='font-bold text-6xl '><span className='gradient-text'>Plans </span></h3>
+        <p className='text-gray-400 text-center mt-4 mb-12'>
+            Select the optimal plan tailored to your company's needs, and rest assured that we will respond within 24 hours. <br></br> Our commitment to quality ensures that if you find our service unsatisfactory, you can claim a 100% refund within 15 days.</p>
         </div>
-                  
+       
 
         <div className='flex flex-col md:flex-row gap-5'>
             
-
-            <div className="w-full flex flex-col p-5 border border-gray-200 rounded-lg sm:p-8 dark:bg-[#1d2529]  dark:border-gray-700">
+    
+            <div className="w-full  flex flex-col p-5 border border-gray-200 rounded-lg sm:p-8 dark:bg-[#1d2529]  dark:border-gray-700">
           <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-white">Standard plan</h5>
           <div className="flex items-baseline text-gray-900 dark:text-white relative">
             <span className="text-3xl font-semibold">$</span>
@@ -76,6 +77,8 @@ export default function pricing() {
           >
             Choose plan
           </button>
+
+
         </div>
 
         <div className="w-full flex flex-col p-5 border border-gray-200 rounded-lg  sm:p-8 dark:bg-[#1d2529] dark:border-gray-700">
@@ -133,6 +136,67 @@ export default function pricing() {
             Unavailable
           </button>
         </div>
+
+        <div className="w-full flex flex-col p-5 border border-gray-200 rounded-lg  sm:p-8 dark:bg-[#1d2529] dark:border-gray-700">
+          <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-white">Deluxe plan</h5>
+       
+
+          <div className="flex items-baseline text-gray-900 dark:text-white relative">
+           
+            <span className="text-4xl mt-2 font-extrabold tracking-tight">Contact for a quote</span>
+            
+            
+          </div>
+          
+          <ul role="list" className="space-y-5 mt-[87px] my-7">
+        
+          <li className="flex space-x-3">
+              <BsCheck className="flex-shrink-0 w-4 h-4  bg-blue-600 rounded-full text-white " />
+              <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">1 hour workshop call to identify the needs of your business.</span>
+            </li>
+            <li className="flex space-x-3">
+              <BsCheck className="flex-shrink-0 w-4 h-4 bg-blue-600 rounded-full text-white" />
+              <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Complete full-stack development.</span>
+            </li>
+            <li className="flex space-x-3">
+              <BsCheck className="flex-shrink-0 w-4 h-4 bg-blue-600 rounded-full text-white" />
+              <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Endless custom design options.</span>
+            </li>
+            <li className="flex space-x-3">
+              <BsCheck className="flex-shrink-0 w-4 h-4 bg-blue-600 rounded-full text-white" />
+              <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Include AI Premium package.</span>
+            </li>
+
+            <li className="flex space-x-3">
+              <BsCheck className="flex-shrink-0 w-4 h-4  bg-blue-600 rounded-full text-white " />
+              <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Mobile experience.</span>
+            </li>
+
+            <li className="flex space-x-3">
+              <BsCheck className="flex-shrink-0 w-4 h-4  bg-blue-600 rounded-full text-white " />
+              <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">E-commerce integration.</span>
+            </li>
+     
+            <li className="flex space-x-3">
+              <BsCheck className="flex-shrink-0 w-4 h-4  bg-blue-600 rounded-full text-white " />
+              <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">User-friendly account creation process.</span>
+            </li>
+            <li className="flex space-x-3">
+              <BsCheck className="flex-shrink-0 w-4 h-4  bg-blue-600 rounded-full text-white " />
+              <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Robust website security measures.</span>
+            </li>
+          
+            
+          </ul>
+          <button
+            type="button"
+            className="dark:text-white border  dark:border-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center" disabled
+          >
+            Unavailable
+          </button>
+        </div>
+
+
         </div>
         </div>
        

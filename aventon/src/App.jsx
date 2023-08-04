@@ -18,6 +18,12 @@ import './App.css';
 function App() {
   const [showFixedButton, setShowFixedButton] = useState(false);
 
+  const[switchButtons, setSwitchButtons] = useState(true);
+
+  const handleSwitch = () => {
+      setSwitchButtons(false);
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       // Check if the user has scrolled beyond a certain position (e.g., 200 pixels)
@@ -56,7 +62,7 @@ function App() {
   
         <Navbar/>
 
-        <div  className='w-full hero h-screen mt-[5em] 2xl:mt-[10em]'>
+        <div  className='w-full hero h-screen mt-[14em] 2xl:mt-[10em]'>
 
           <Hero/>
 
@@ -119,8 +125,11 @@ function App() {
         
         
         
-        <section id="plans" className='h-screen relative mb-[19em] 2xl:mb-0 mt-[68em] md:mt-12 flex  justify-center items-center'>
-        
+        <section id="plans" className='h-screen relative mb-[19em] 2xl:mb-0 mt-[68em] md:mt-12 flex flex-col justify-center items-center'>
+   
+
+          
+
           <Pricing/>
 
         </section>
@@ -128,6 +137,7 @@ function App() {
         <section id="faqs" className='h-screen mt-[75em] md:mt-12 flex  justify-center items-center'>
           <Faq/>
           </section>
+
         <section className='mt-[30em] md:mt-0'>
         <Footer/>
         </section>
