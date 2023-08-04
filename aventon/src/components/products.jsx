@@ -38,8 +38,6 @@ const CustomComponent = () => {
         <ul style={{ listStyle: "disc" }}>
           <div><h2 className='text-4xl mb-4'>Event Management <h3 className='font-bold text-2xl text-red-500 mb-5'>Comming Soon</h3></h2></div>
          
-            
-                
                 <li>Intelligent Event Planning: Smart event planning tools and insights.</li>
                 <li>Automated Event Reminders: Timely reminders for attendees.</li>
                 <li>Efficient Resource Allocation: Optimal allocation of event resources.</li>
@@ -59,7 +57,7 @@ const CustomComponent = () => {
 
       <div className='grid grid-cols-1  md:grid-cols-2 gap-5 md:w-[30%]'>
 
-        <div className='border dark:border-none flex h-[15em] dark:bg-[#17171d] dark:border-gray-600 rounded-lg  dark:text-white hover:bg-[#1d80d7] dark:hover:bg-[#1d80d7] hover:text-white duration-300 transition-all hover:cursor-pointer flex-col justify-center items-center md:w-[120]  p-5' onClick={() => handleOptionClick('Option 1')}>
+        <div className='border dark:border-none flex h-[15em] dark:bg-[#1d2529] dark:border-gray-600 rounded-lg  dark:text-white hover:bg-[#1d80d7] dark:hover:bg-[#1d80d7] hover:text-white duration-300 transition-all hover:cursor-pointer flex-col justify-center items-center md:w-[120]  p-5' onClick={() => handleOptionClick('Option 1')}>
           <div className='p-8 w-full flex items-center flex-col '>
 
             <LanguageIcon sx={{ fontSize: "40px" }} />
@@ -67,10 +65,10 @@ const CustomComponent = () => {
             <h2 className='font-bold mt-3'>E-Commerce</h2>
 
           </div>
-          <button className='h-[35px] w-[140px]  rounded-md bg-[#444455] text-white p-5 flex items-center justify-center'>Learn More</button>
+          <button className='h-[35px] w-[140px]  rounded-md bg-white border dark:border-none text-black p-5 flex items-center justify-center'>Learn More</button>
         </div>
 
-        <div className='border dark:border-none flex h-[15em] dark:hover:bg-[#1d80d7] hover:bg-[#1d80d7] hover:text-white dark:bg-[#17171d] dark:border-gray-600 rounded-lg dark:text-white hover:cursor-pointer duration-300  transition-all flex-col justify-center items-center w-full  p-5' onClick={() => handleOptionClick('Option 2')}>
+        <div className='border dark:border-none flex h-[15em] dark:hover:bg-[#1d80d7] hover:bg-[#1d80d7] hover:text-white dark:bg-[#1d2529]  dark:border-gray-600 rounded-lg dark:text-white hover:cursor-pointer duration-300  transition-all flex-col justify-center items-center w-full  p-5' onClick={() => handleOptionClick('Option 2')}>
           <div className='p-8 w-full flex items-center flex-col '>
 
             <HouseIcon sx={{ fontSize: "40px" }} />
@@ -78,10 +76,10 @@ const CustomComponent = () => {
             <h2 className='font-bold mt-3'>Real-Estate</h2>
 
           </div>
-          <button className='h-[35px] w-[140px] rounded-md bg-[#444455] text-white p-5 flex items-center justify-center'>Learn More</button>
+          <button className='h-[35px] w-[140px] rounded-md bg-white text-black border dark:border-none p-5 flex items-center justify-center'>Learn More</button>
         </div>
 
-        <div className='border dark:border-none hover:bg-[#1d80d7] dark:hover:bg-[#1d80d7] hover:text-white dark:bg-[#17171d] flex h-[15em] rounded-lg dark:text-white hover:cursor-pointer duration-300  transition-all flex-col justify-center items-center w-full ' onClick={() => handleOptionClick('Option 3')}>
+        <div className='border dark:border-none hover:bg-[#1d80d7] dark:hover:bg-[#1d80d7] hover:text-white dark:bg-[#1d2529]  flex h-[15em] rounded-lg dark:text-white hover:cursor-pointer duration-300  transition-all flex-col justify-center items-center w-full ' onClick={() => handleOptionClick('Option 3')}>
           <div className='p-6 w-full flex items-center flex-col '>
 
             <CalendarMonthIcon sx={{ fontSize: "40px" }} />
@@ -89,7 +87,7 @@ const CustomComponent = () => {
             <h2 className='font-bold mt-3 text-center'>Event Management</h2>
 
           </div>
-          <button className='h-[35px] w-[140px] rounded-md bg-[#444455] text-white p-5 flex items-center justify-center'>Learn More</button>
+          <button className='h-[35px] w-[140px] rounded-md text-black bg-white border dark:border-none  p-5 flex items-center justify-center'>Learn More</button>
         </div>
       </div>
 

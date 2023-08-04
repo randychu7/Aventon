@@ -113,7 +113,7 @@ import {
        
   
         <Title order={2} className={classes.title} ta="center" mt="sm">
-          <p className='dark:text-white text-5xl'>Integrate effortlessly <br/> with any business.</p>
+          <p className='dark:text-white text-6xl'>Integrate <span className='gradient-text'>effortlessly</span> <br/> with any business.</p>
         </Title>
   
         <Text c="dimmed" className={classes.description} ta="center" mt="md">

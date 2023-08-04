@@ -19,25 +19,28 @@ export default function Nav() {
           </div>
 
           <div className='hidden md:flex'>
-            <ul className='flex items-center gap-x-6 '>
+            <ul className='flex items-center xl:gap-x-6 '>
               <li className='text-[17.5px] dark:text-white hover:-translate-y-1 font-bold mr-5 hover:text-gray-500 dark:hover:text-gray-500 transition-all duration-200 hover:cursor-pointer'>
-                Home
+                Benefits
               </li>
               <li className='text-[17.5px] dark:text-white hover:-translate-y-1 font-bold mr-5 hover:text-gray-500 dark:hover:text-gray-500 transition-all duration-200 hover:cursor-pointer'>
-                About
+                Models
               </li>
               <li className='text-[17.5px] dark:text-white hover:-translate-y-1 font-bold mr-5 hover:text-gray-500 dark:hover:text-gray-500 transition-all duration-200 hover:cursor-pointer'>
-                Contact
+                Process
               </li>
               <li className='text-[17.5px] dark:text-white hover:-translate-y-1 font-bold mr-5 hover:text-gray-500 dark:hover:text-gray-500 transition-all duration-200 hover:cursor-pointer'>
-                Blog
+                Plans
+              </li>
+              <li className='text-[17.5px] dark:text-white hover:-translate-y-1 font-bold mr-5 hover:text-gray-500 dark:hover:text-gray-500 transition-all duration-200 hover:cursor-pointer'>
+                FAQs
               </li>
             </ul>
           </div>
 
           <div className='md:flex hidden -translate-x-12 md:translate-x-0 items-center'>
             <Light />
-            <button className='h-[50px] w-[140px] bg-[#0061b6] ml-4 rounded-full 
+            <button className='h-[50px] w-[140px] bg-blue-600 ml-4 rounded-full 
                                             transition-all duration-200 floating-button shadow-below'>
               <h2 className='font-bold text-1xl text-white'>View Plans</h2>
             </button>
@@ -47,6 +50,7 @@ export default function Nav() {
             <Light />
             <Hamburger />
           </div>
+          
         </div>
       </div>
     </nav>
