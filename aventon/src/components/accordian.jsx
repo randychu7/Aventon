@@ -11,33 +11,16 @@ const Accordion = () => {
   };
 
   const accordionData = [
+
     {
       id: 1,
-      icon: <LanguageIcon/>,
-      question: 'E-Commerce',
-      answer: (
-        <div className='p-2 text-black dark:text-white'>
-       <ul style={{ listStyle: "disc" }}>
-            <li>24/7 Customer Support: Instant assistance and guidance through the purchase journey.</li>
-            <li>Personalized Recommendations: Tailored product suggestions for a better shopping experience.</li>
-            <li>Seamless Order Tracking: Real-time updates on orders and delivery details.</li>
-            <li>Increased Conversion Rates: Proactive assistance to boost sales.</li>
-            </ul>
-        </div>
-      ),
-      linkUrl: '/docs/getting-started/introduction/',
-    },
-    {
-      id: 2,
       icon: <HouseIcon/>,
       question: 'Real Estate',
       answer: (<div className='p-2 text-black dark:text-white'>
 
             
             <ul style={{ listStyle: "disc" }}>
-                <div className='w-full flex items-center justify-center'>
-                <h3 className='font-bold text-2xl text-red-500 mb-1'>Comming Soon</h3>
-                </div>
+               
             <li>Smart Property Recommendations: Personalized property suggestions.</li>
             <li>Instant Property Information: Real-time details about properties.</li>
             <li>Automated Appointment Scheduling: Efficient coordination between agents and clients.</li>
@@ -47,6 +30,25 @@ const Accordion = () => {
     </div>),
 
     },
+    {
+        id: 2,
+        icon: <LanguageIcon/>,
+        question: 'E-Commerce',
+        answer: (
+          <div className='p-2 text-black dark:text-white'>
+         <ul style={{ listStyle: "disc" }}>
+         <div className='w-full flex items-center justify-center'>
+                <h3 className='font-bold text-2xl text-red-500 mb-1'>Comming Soon</h3>
+                </div>
+              <li>24/7 Customer Support: Instant assistance and guidance through the purchase journey.</li>
+              <li>Personalized Recommendations: Tailored product suggestions for a better shopping experience.</li>
+              <li>Seamless Order Tracking: Real-time updates on orders and delivery details.</li>
+              <li>Increased Conversion Rates: Proactive assistance to boost sales.</li>
+              </ul>
+          </div>
+        ),
+        linkUrl: '/docs/getting-started/introduction/',
+      },
     {
       id: 3,
       icon: <CalendarMonthIcon/>,

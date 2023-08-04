@@ -28,11 +28,11 @@
   @keyframes pulsate {
     0%, 100% {
       width: 200px;
-      height: 300px;
+      height: 200px;
     }
     50% {
-      width: 250px;
-      height: 220px;
+      width: 300px;
+      height: 300px;
     }
   }
 
@@ -40,8 +40,8 @@
     content: "";
     position: absolute;
     overflow: auto;
-    width: 300px; /* adjust size as needed */
-    height: 300px; /* adjust size as needed */
+    width: 200px; /* adjust size as needed */
+    height: 200px; /* adjust size as needed */
     background-color: #1d80d7; /* adjust color as needed */
     border-radius: 50%; /* makes the shape a circle */
     filter: blur(130px); /* adjust blur as needed */
@@ -56,6 +56,17 @@
 
 }
 
+.overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
 .hero2::before {
   content: "";
   position: absolute;
@@ -68,6 +79,46 @@
   /* adjust position as needed */
   top: 30%;
   left: 50%;
+  /* corrects position due to the blob's size */
+  transform: translate(-50%, -50%);
+  z-index: -999; /* puts the blob behind other content */
+  transform-origin: center center; /* Set the rotation point to the center of the element */
+  animation: rotate 50s infinite linear, pulsate 10s infinite ease-in-out;
+
+}
+
+.hero3::before {
+  content: "";
+  position: absolute;
+  overflow: hidden;
+  width: 200px; /* adjust size as needed */
+  height: 200px; /* adjust size as needed */
+  background-color: #1f87e2; /* adjust color as needed */
+  border-radius: 50%; /* makes the shape a circle */
+  filter: blur(110px); /* adjust blur as needed */
+  /* adjust position as needed */
+  top: 30%;
+  left: 50%;
+  /* corrects position due to the blob's size */
+  transform: translate(-50%, -50%);
+  z-index: -999; /* puts the blob behind other content */
+  transform-origin: center center; /* Set the rotation point to the center of the element */
+  animation: rotate 50s infinite linear, pulsate 10s infinite ease-in-out;
+
+}
+
+.hero4::before {
+  content: "";
+  position: absolute;
+  overflow: hidden;
+  width: 300px; /* adjust size as needed */
+  height: 200px; /* adjust size as needed */
+  background-color: #1f87e2; /* adjust color as needed */
+  border-radius: 50%; /* makes the shape a circle */
+  filter: blur(110px); /* adjust blur as needed */
+  /* adjust position as needed */
+  top: 40%;
+  left: 30%;
   /* corrects position due to the blob's size */
   transform: translate(-50%, -50%);
   z-index: -999; /* puts the blob behind other content */
@@ -95,4 +146,5 @@
     color: transparent;
     animation: gradient 3s infinite;
   }
+  
   

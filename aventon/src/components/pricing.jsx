@@ -2,7 +2,8 @@ import { BsCheck } from 'react-icons/bs';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 
 export default function pricing() {
-    return (<div>
+    return (<div className='mt-[35em] md:mt-0'>
+        
         <div className='w-full flex flex-col justify-center p-4 items-center'>  
         <h3 className='font-bold text-6xl '><span className='gradient-text'>Subscriptions </span></h3>
         <p className='text-gray-400 mb-10 mt-4 text-center md:text-left'> We currently have two tiers for subscriptions, choose the best plan for your business.</p>
@@ -24,7 +25,7 @@ export default function pricing() {
           </div>
           <div className='flex items-center just'>
             <h2 className='text-red-600 text-5xl font-bold'>Free</h2> 
-            <div className='w-[95px] ml-3 text-white flex rounded-lg items-center justify-center h-[40px] bg-blue-600'>
+            <div className='w-[95px] ml-3 mt-2 text-white flex rounded-lg items-center justify-center h-[40px] bg-blue-600'>
             <div className='flex'>
             <p>Limited</p>
             <AutoAwesomeIcon/>

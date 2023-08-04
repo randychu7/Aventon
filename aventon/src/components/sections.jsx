@@ -15,7 +15,7 @@ export default function sections() {
              <section className='bg-black h-screen  flex items-center p-6 flex-col-reverse md:flex-row dark:bg-white'>
 
             
-                <div className='md:w-[50%]  p-5'> 
+                <div className='md:w-[50%] p-5'> 
                     <p className='reveal-type split-type text-white text-center md:text-left dark:text-black text-[30px] md:text-6xl font-bold'> 
                     Experience endless <span className='gradient-text'>performance</span> with our AI solutions. <span className='md:text-[35px] text-[24px] mt-4 font-normal'>
                     Our AI is constantly updated and evolved to adapt to your dynamic needs, ensuring a seamless and high-performing experience for your business.</span>
@@ -33,7 +33,7 @@ export default function sections() {
 
                 <section className='bg-black h-screen  dark:bg-white'>
                 
-                <div className='flex md:flex-row translate-y-[100px]  flex-col items-center'>
+                <div className='flex md:flex-row translate-y-[90px] md:translate-y-0  flex-col items-center'>
 
                 <div className='md:w-[50%] md:p-10'>
                     <Lottie className='w-[100%] h-[100%] object-cover' animationData={Feature2}/>

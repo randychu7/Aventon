@@ -6,6 +6,14 @@ import List from '@mui/material/List';
 import MenuIcon from '@mui/icons-material/Menu';
 
 export default function TemporaryDrawer() {
+    const handleScrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
+
   const [state, setState] = React.useState({
     top: false,
   });
@@ -28,10 +36,12 @@ export default function TemporaryDrawer() {
     >
       <List>
         <div className='p-8 flex flex-col dark:text-white text-[20px] gap-y-6'>
-            <a className='hover:text-gray-500 hover:cursor-pointer '>Home</a>
-            <a className='hover:text-gray-500 hover:cursor-pointer '>About</a>
-            <a className='hover:text-gray-500 hover:cursor-pointer '>Contact</a>
-            <a className='hover:text-gray-500 hover:cursor-pointer '>Testimonials</a>
+            <div onClick={() => handleScrollToSection('benefits')} className='hover:text-gray-500 hover:cursor-pointer '>Benefits</div>
+            <a onClick={() => handleScrollToSection('models')} className='hover:text-gray-500 hover:cursor-pointer '>AI Models</a>
+            <a onClick={() => handleScrollToSection('process')} className='hover:text-gray-500 hover:cursor-pointer '>Process</a>
+            <a onClick={() => handleScrollToSection('plans')} className='hover:text-gray-500 hover:cursor-pointer '>Plans</a>
+            <a onClick={() => handleScrollToSection('faqs')} className='hover:text-gray-500 hover:cursor-pointer '>FAQs</a>
+
         </div>
       </List>
     </Box>

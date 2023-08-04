@@ -11,32 +11,33 @@ const CustomComponent = () => {
     'Option 1': (
       <div className='p-2 text-black dark:text-white'>
         <ul style={{ listStyle: "disc" }}>
-          <div><h2 className='text-4xl mb-4'>E-Commerce</h2></div>
-          <li>24/7 Customer Support: Instant assistance and guidance through the purchase journey.</li>
-          <li>Personalized Recommendations: Tailored product suggestions for a better shopping experience.</li>
-          <li>Seamless Order Tracking: Real-time updates on orders and delivery details.</li>
-          <li>Increased Conversion Rates: Proactive assistance to boost sales.</li>
+          <div><h2 className='text-5xl mb-4 font-bold'>Real Estate</h2></div>
+
+          <li>Smart Property Recommendations: Personalized property suggestions.</li>
+            <li>Instant Property Information: Real-time details about properties.</li>
+            <li>Automated Appointment Scheduling: Efficient coordination between agents and clients.</li>
+            <li>Enhanced Lead Qualification: Pre-qualification of leads for higher conversion.</li>
+          <a className='text-blue-600 underline'>View Demo</a>
         </ul>
-        <a className='text-blue-600 underline mt-7'>View Demo</a>
+     
 
       </div>
     ),
     'Option 2': (
       <div className='p-2 text-black dark:text-white'>
         <ul style={{ listStyle: "disc" }}>
-          <div><h2 className='text-4xl mb-4'>Real Estate <h3 className='font-bold text-2xl text-red-500 mb-5'>Comming Soon</h3></h2></div>
-         
-            <li>Smart Property Recommendations: Personalized property suggestions.</li>
-            <li>Instant Property Information: Real-time details about properties.</li>
-            <li>Automated Appointment Scheduling: Efficient coordination between agents and clients.</li>
-            <li>Enhanced Lead Qualification: Pre-qualification of leads for higher conversion.</li>
+          <div><h2 className='text-5xl mb-4 font-bold'>E-Commerce<h3 className='font-bold text-2xl text-red-500 mb-5'>Comming Soon</h3></h2></div>
+          <li>24/7 Customer Support: Instant assistance and guidance through the purchase journey.</li>
+          <li>Personalized Recommendations: Tailored product suggestions for a better shopping experience.</li>
+          <li>Seamless Order Tracking: Real-time updates on orders and delivery details.</li>
+          <li>Increased Conversion Rates: Proactive assistance to boost sales.</li>
         </ul>
       </div>
     ),
     'Option 3': (
       <div className='p-2 text-black dark:text-white'>
         <ul style={{ listStyle: "disc" }}>
-          <div><h2 className='text-4xl mb-4'>Event Management <h3 className='font-bold text-2xl text-red-500 mb-5'>Comming Soon</h3></h2></div>
+          <div><h2 className='text-5xl mb-4 font-bold'>Event Management <h3 className='font-bold text-2xl text-red-500 mb-5'>Comming Soon</h3></h2></div>
          
                 <li>Intelligent Event Planning: Smart event planning tools and insights.</li>
                 <li>Automated Event Reminders: Timely reminders for attendees.</li>
@@ -59,10 +60,10 @@ const CustomComponent = () => {
 
         <div className='border dark:border-none flex h-[15em] dark:bg-[#1d2529] dark:border-gray-600 rounded-lg  dark:text-white hover:bg-[#1d80d7] dark:hover:bg-[#1d80d7] hover:text-white duration-300 transition-all hover:cursor-pointer flex-col justify-center items-center md:w-[120]  p-5' onClick={() => handleOptionClick('Option 1')}>
           <div className='p-8 w-full flex items-center flex-col '>
+          <HouseIcon sx={{ fontSize: "40px" }} />
+            
 
-            <LanguageIcon sx={{ fontSize: "40px" }} />
-
-            <h2 className='font-bold mt-3'>E-Commerce</h2>
+            <h2 className='font-bold mt-3'>Real-Estate</h2>
 
           </div>
           <button className='h-[35px] w-[140px]  rounded-md bg-white border dark:border-none text-black p-5 flex items-center justify-center'>Learn More</button>
@@ -71,12 +72,12 @@ const CustomComponent = () => {
         <div className='border dark:border-none flex h-[15em] dark:hover:bg-[#1d80d7] hover:bg-[#1d80d7] hover:text-white dark:bg-[#1d2529]  dark:border-gray-600 rounded-lg dark:text-white hover:cursor-pointer duration-300  transition-all flex-col justify-center items-center w-full  p-5' onClick={() => handleOptionClick('Option 2')}>
           <div className='p-8 w-full flex items-center flex-col '>
 
-            <HouseIcon sx={{ fontSize: "40px" }} />
+          <LanguageIcon sx={{ fontSize: "40px" }} />
 
-            <h2 className='font-bold mt-3'>Real-Estate</h2>
+            <h2 className='font-bold mt-3'>E-Commerce</h2>
 
           </div>
-          <button className='h-[35px] w-[140px] rounded-md bg-white text-black border dark:border-none p-5 flex items-center justify-center'>Learn More</button>
+          <button className='h-[35px] w-[140px] rounded-md  text-black dark:text-white border dark:border-gray-700 p-5 flex items-center justify-center'>Unavailable</button>
         </div>
 
         <div className='border dark:border-none hover:bg-[#1d80d7] dark:hover:bg-[#1d80d7] hover:text-white dark:bg-[#1d2529]  flex h-[15em] rounded-lg dark:text-white hover:cursor-pointer duration-300  transition-all flex-col justify-center items-center w-full ' onClick={() => handleOptionClick('Option 3')}>
@@ -87,7 +88,7 @@ const CustomComponent = () => {
             <h2 className='font-bold mt-3 text-center'>Event Management</h2>
 
           </div>
-          <button className='h-[35px] w-[140px] rounded-md text-black bg-white border dark:border-none  p-5 flex items-center justify-center'>Learn More</button>
+          <button disabled className='h-[35px] w-[140px] rounded-md text-black dark:text-white border dark:border-gray-700  p-5 flex items-center justify-center'>Unavailable</button>
         </div>
       </div>
 

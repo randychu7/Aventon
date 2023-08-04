@@ -2,10 +2,10 @@ import React from 'react';
 
 const FaqSection = () => {
   return (
-    <section className=" rounded-lg dark:bg-[#1d2529]">
+    <section className=" rounded-lg">
       <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <h2 className="mb-8 text-6xl tracking-tight font-extrabold text-gray-900 dark:text-white">Frequently asked <span className='gradient-text'>questions </span></h2>
-        <h2 className='text-gray-500 mb-4'>If you have any questions feel free to email use at aventonautomation@google.com</h2>
+        <h2 className='text-gray-500 mb-4'>If you have any questions feel free to email us at info@aventonautomation.com</h2>
         <div className="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2">
           <div>
            
