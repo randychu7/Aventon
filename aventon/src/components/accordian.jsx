@@ -78,7 +78,7 @@ const Accordion = () => {
           <h2 id={`accordion-collapse-heading-${item.id}`}>
             <button
               type="button"
-              className={`flex items-center justify-between w-full p-5 font-medium dark:text-white text-left dark:bg-[#17171d] border border-gray-200 rounded-xl mb-2 dark:border-[#1b1b22] hover:bg-gray-100 dark:hover:bg-gray-800 ${
+              className={`flex items-center justify-between w-full p-5 font-medium dark:text-white text-left dark:bg-[#1d2529] border border-gray-200 rounded-xl mb-2 dark:border-[#1b1b22] hover:bg-gray-100 dark:hover:bg-gray-800 ${
                 activeAccordion === item.id ? 'active' : ''
               }`}
               data-accordion-target={`#accordion-collapse-body-${item.id}`}
@@ -106,7 +106,7 @@ const Accordion = () => {
             id={`accordion-collapse-body-${item.id}`}
             className={`${
               activeAccordion === item.id ? 'block' : 'hidden'
-            } p-5 dark:bg-[#17171d] border-gray-200 dark:border-gray-700`}
+            } p-5 dark:bg-[#1d2529] border-gray-200 dark:border-gray-700`}
             aria-labelledby={`accordion-collapse-heading-${item.id}`}
           >
             <p className="mb-2">{item.answer}</p>

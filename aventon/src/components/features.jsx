@@ -97,7 +97,7 @@ import {
   export default function FeaturesCards() {
     const { classes, theme } = useStyles();
     const features = mockdata.map((feature) => (
-      <Card key={feature.title} shadow="md" radius="md" className={classes.card} padding="xl">
+      <Card key={feature.title} shadow="md" radius="md" className="dark:bg-[#1d2529] dark:text-white" padding="xl">
         <feature.icon size={rem(50)} stroke={2} color={theme.fn.primaryColor()} />
         <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
           {feature.title}
@@ -109,7 +109,7 @@ import {
     ));
   
     return (
-      <Container size="lg" className='hero2' py="xl">
+      <Container size="lg" className='hero ' py="xl">
        
   
         <Title order={2} className={classes.title} ta="center" mt="sm">
