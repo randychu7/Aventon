@@ -137,18 +137,18 @@ function App() {
 
         </section>
 
-        <section id="faqs" className='h-screen mt-[80em] md:mt-12 flex  justify-center items-center'>
+        <section id="faqs" className='h-screen mt-[93em] md:mt-12 flex  justify-center items-center'>
           <Faq/>
           </section>
 
-          <section>
+          <section className='mt-[29em]'>
           <div className='h-[30em] flex flex-col justify-center items-center mt-[20em] bg-black dark:bg-white' >
             <h3 className='text-white dark:text-black text-center mb-7 dark:bg-white font-bold text-3xl'>Join now and stay ahead with business automation.</h3>
             <button className='w-[150px] h-[50px] rounded-full text-white bg-blue-600 hover:bg-blue-700'>Join now!</button>
           </div>
           </section>
 
-        <section className='mt-[5em] md:mt-0'>
+        <section className='mt-[15em] md:mt-10'>
         <Footer/>
         </section>
     
