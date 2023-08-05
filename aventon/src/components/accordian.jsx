@@ -28,6 +28,7 @@ const Accordion = () => {
             </ul>
 
     </div>),
+      linkUrl: '/docs/getting-started/introduction/',
 
     },
     {
@@ -47,7 +48,7 @@ const Accordion = () => {
               </ul>
           </div>
         ),
-        linkUrl: '/docs/getting-started/introduction/',
+      
       },
     {
       id: 3,

@@ -152,7 +152,7 @@ export default function pricing() {
         
           <li className="flex space-x-3">
               <BsCheck className="flex-shrink-0 w-4 h-4  bg-blue-600 rounded-full text-white " />
-              <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">1 hour workshop call to identify the needs of your business.</span>
+              <span className="text-base font-normal leading-tight text-gray-500 dark:text-gray-400">Unlimited workshop calls to identify the needs of your business.</span>
             </li>
             <li className="flex space-x-3">
               <BsCheck className="flex-shrink-0 w-4 h-4 bg-blue-600 rounded-full text-white" />

@@ -80,7 +80,7 @@ function App() {
         </div>
 
 
-        <section className='h-[15em] bg-black dark:bg-white'  style={{borderRadius: '90px 90px 0 0'}}>
+        <section className='h-[5em] bg-black dark:bg-white'  style={{borderRadius: '90px 90px 0 0'}}>
 
         </section>
 
@@ -96,9 +96,12 @@ function App() {
          <div  className=' p-5 w-full'>
 
 
-          <div className='w-full flex items-center dark:text-white justify-center text-6xl mb-[1em] mt-[3em] md:mt-[3em] font-bold'>
+          <div className='w-full flex items-center dark:text-white justify-center text-6xl mb-5 mt-[3em] md:mt-[3em] font-bold'>
             
-              <h2>Our <span className='gradient-text'>AI </span> Models</h2></div>
+              <h2>Our <span className='gradient-text'>AI </span> Models</h2>
+              
+              </div>
+              <h3 className='text-center mb-8 dark:text-gray-400'>Our AI models guide customers through buying with valuable insights and seamless assistance.</h3>
               <div className='hidden md:flex'>
                  <Carousel/>
               </div>
@@ -110,7 +113,7 @@ function App() {
           </div>
         </section>
 
-        <section id="process" className='h-screen flex mt-[4em] mb-[15em] items-center justify-center'>
+        <section id="process" className='h-screen flex mb-[15em] items-center justify-center'>
         
         <Process/>
 
@@ -134,11 +137,18 @@ function App() {
 
         </section>
 
-        <section id="faqs" className='h-screen mt-[75em] md:mt-12 flex  justify-center items-center'>
+        <section id="faqs" className='h-screen mt-[80em] md:mt-12 flex  justify-center items-center'>
           <Faq/>
           </section>
 
-        <section className='mt-[30em] md:mt-0'>
+          <section>
+          <div className='h-[30em] flex flex-col justify-center items-center mt-[20em] bg-black dark:bg-white' >
+            <h3 className='text-white dark:text-black text-center mb-7 dark:bg-white font-bold text-3xl'>Join now and stay ahead with business automation.</h3>
+            <button className='w-[150px] h-[50px] rounded-full text-white bg-blue-600 hover:bg-blue-700'>Join now!</button>
+          </div>
+          </section>
+
+        <section className='mt-[5em] md:mt-0'>
         <Footer/>
         </section>
     

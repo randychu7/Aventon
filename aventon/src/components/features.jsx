@@ -116,7 +116,7 @@ import {
           <p className='dark:text-white text-6xl'>Integrate <span className='gradient-text'>effortlessly</span> <br/> with any business.</p>
         </Title>
   
-        <Text c="dimmed" className={classes.description} ta="center" mt="md">
+        <Text c="dimmed" className="text-black dark:text-white" ta="center" mt="md">
         Our AI automated platform offers effortless integration with businesses of all sizes, streamlining operations and fostering seamless collaboration. 
         </Text>
   
