@@ -144,7 +144,9 @@ function App() {
           <section className='mt-[29em]'>
           <div className='h-[30em] flex flex-col justify-center items-center mt-[20em] bg-black dark:bg-white' >
             <h3 className='text-white dark:text-black text-center mb-7 dark:bg-white font-bold text-3xl'>Join now and stay ahead with business automation.</h3>
+            <a href='https://calendly.com/aventonautomation'>
             <button className='w-[150px] h-[50px] rounded-full text-white bg-blue-600 hover:bg-blue-700'>Join now!</button>
+            </a>
           </div>
           </section>
 
